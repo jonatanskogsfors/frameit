@@ -1,0 +1,22 @@
+[project]
+name = "frameit"
+version = "2025.1.0"
+requires-python = ">= 3.13"
+dependencies = [
+    "opencv-python",
+    "click",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit>=4.0.1",
+    "ruff>=0.8.1",
+]
+
+[tool.ruff]
+line-length = 90
+
+[tool.ruff.lint]
+select = ["PL", "E", "F", "W", "I", "RUF", "N"]
+ignore = ["PLR0913"]
