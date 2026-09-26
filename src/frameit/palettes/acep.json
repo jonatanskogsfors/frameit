@@ -1,0 +1,23 @@
+{
+  "name": "ACeP 7-colour – epdoptimize (opendithering, Waveshare PhotoPainter)",
+  "size": [800, 480],
+  "color_names": ["black", "white", "green", "blue", "red", "yellow", "orange"],
+  "measured_rgb": [
+    [25, 30, 33],
+    [241, 241, 241],
+    [83, 164, 40],
+    [49, 49, 143],
+    [210, 14, 19],
+    [243, 207, 17],
+    [184, 94, 28]
+  ],
+  "ideal_rgb": [
+    [0, 0, 0],
+    [255, 255, 255],
+    [0, 255, 0],
+    [0, 0, 255],
+    [255, 0, 0],
+    [255, 255, 0],
+    [255, 128, 0]
+  ]
+}

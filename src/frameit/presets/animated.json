@@ -1,0 +1,18 @@
+{
+  "name": "Animated",
+  "description": "Tecknad film: jämna ytor slätas ut och nyanser dras mot pigmenten. Framtagen på Ghibli.",
+  "resample": "lanczos",
+  "tuning": {
+    "gamma": 1.0,
+    "contrast": 1.0,
+    "saturation": 1.0,
+    "flatten_threshold": 0.008,
+    "flatten_window": 5,
+    "gamut_strength": 1.0,
+    "hue_pull_strength": 0.15,
+    "hue_pull_range": 20,
+    "snap_radius": 0.0,
+    "dither_strength": 0.8,
+    "chroma_weight": 3.0
+  }
+}

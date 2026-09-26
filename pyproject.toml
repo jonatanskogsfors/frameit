@@ -1,11 +1,17 @@
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
 [project]
 name = "frameit"
 version = "2025.1.0"
-requires-python = ">= 3.13"
+requires-python = ">= 3.14"
 dependencies = [
-    "opencv-python",
     "click",
     "Pillow",
+    "marimo>=0.25.0",
+    "numba>=0.67.0",
+    "scipy>=1.18.1",
 ]
 
 [project.optional-dependencies]
@@ -14,9 +20,18 @@ dev = [
     "ruff>=0.8.1",
 ]
 
+[project.scripts]
+frameit = "frameit.main:cli"
+
 [tool.ruff]
 line-length = 90
 
 [tool.ruff.lint]
 select = ["PL", "E", "F", "W", "I", "RUF", "N"]
 ignore = ["PLR0913"]
+
+[tool.ruff.lint.per-file-ignores]
+# marimo notebooks: imports live in cells, cell arguments carry the defining cell's
+# names (constants, classes), cells end with a generated return, and the Swedish UI
+# text uses typographic dashes
+"slow_movie_player.py" = ["PLC0415", "N803", "N806", "PLR1711", "RUF001"]

@@ -1,0 +1,18 @@
+{
+  "name": "Live action",
+  "description": "Spelfilm: ingen utslätning, trognare nyanser (hudtoner), mjukare övergångar, lite mer kontrast och mättnad. Gissning, inte utprovad.",
+  "resample": "lanczos",
+  "tuning": {
+    "gamma": 1.0,
+    "contrast": 1.1,
+    "saturation": 1.1,
+    "flatten_threshold": 0.0,
+    "flatten_window": 5,
+    "gamut_strength": 1.0,
+    "hue_pull_strength": 0.05,
+    "hue_pull_range": 20,
+    "snap_radius": 0.0,
+    "dither_strength": 0.95,
+    "chroma_weight": 3.0
+  }
+}
